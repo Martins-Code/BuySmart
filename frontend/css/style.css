@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #555;
+}
+
+.cart-icon img {
+  width: 30px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("../assets/hero-bg.jpg") no-repeat center center/cover;
+  color: black;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.hero .btn {
+  background-color: #ff6200;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background-color: #e55b00;
+}
+
+/* Categories Section */
+.categories {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.categories .category-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.categories .category {
+  text-align: center;
+}
+
+.categories .category img {
+  border-radius: 5px;
+}
+
+/* Top-Selling Products */
+.products {
+  padding: 2rem 1rem;
+  background-color: #f8f8f8;
+}
+
+.products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.products .product {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.products .product img {
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Makes sure the cards have a consistent size */
+  text-align: center;
+  flex-grow: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05); /* Adds a subtle hover effect */
+}
+
+.customer-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+cite {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+.newsletter form input {
+  padding: 0.5rem;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+.newsletter form button {
+  padding: 0.5rem 1rem;
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter form button:hover {
+  background-color: #e55b00;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
